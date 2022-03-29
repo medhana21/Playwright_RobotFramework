@@ -1,0 +1,18 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.d TeamTest :: This is a Team test file with Robot Framework            
+==============================================================================
+Team File Test Case                                                   | FAIL |
+Setup failed:
+TimeoutError: Timeout 30000ms exceeded.
+------------------------------------------------------------------------------
+Suites.d TeamTest :: This is a Team test file with Robot Framework    | FAIL |
+1 critical test, 0 passed, 1 failed
+1 test total, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 critical test, 0 passed, 1 failed
+1 test total, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\Medhana Harihar\PycharmProjects\Playwright_RobotFramework\Reports\pabot_results\3\output.xml

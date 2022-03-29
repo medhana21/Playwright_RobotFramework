@@ -1,0 +1,2408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 3.2.2 (Python 3.10.0 on win32)" generated="20220314 21:10:05.532" rpa="false">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="a BillingTest" source="C:\Users\Medhana Harihar\PycharmProjects\Playwright_RobotFramework\Test\a_BillingTest.robot">
+<kw name="Launch Browser Engine" library="CommonHelper" type="setup">
+<kw name="Launch Browser" library="PlaywrightCore">
+<arguments>
+<arg>browser_name=chromium</arg>
+</arguments>
+<msg timestamp="20220314 20:52:52.561" level="INFO">Opening Browser : chromium</msg>
+<status status="PASS" starttime="20220314 20:52:00.796" endtime="20220314 20:52:52.562"></status>
+</kw>
+<status status="PASS" starttime="20220314 20:52:00.795" endtime="20220314 20:52:52.564"></status>
+</kw>
+<kw name="Quit Opened Browser" library="CommonHelper" type="teardown">
+<kw name="Close Browser" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 20:54:26.736" endtime="20220314 20:54:34.676"></status>
+</kw>
+<status status="PASS" starttime="20220314 20:54:26.735" endtime="20220314 20:54:34.677"></status>
+</kw>
+<test id="s1-s1-t1" name=" Billing Account File Test Case">
+<kw name="Open Cloudwiz Application" library="CommonHelper" type="setup">
+<kw name="Open Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 20:52:52.569" endtime="20220314 20:53:12.759"></status>
+</kw>
+<kw name="Login Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 20:53:12.760" endtime="20220314 20:53:42.417"></status>
+</kw>
+<kw name="Take Screenshot" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 20:53:42.418" endtime="20220314 20:53:43.026"></status>
+</kw>
+<status status="PASS" starttime="20220314 20:52:52.567" endtime="20220314 20:53:43.026"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"This is billing account test case"</arg>
+</arguments>
+<msg timestamp="20220314 20:53:43.028" level="INFO">"This is billing account test case"</msg>
+<status status="PASS" starttime="20220314 20:53:43.027" endtime="20220314 20:53:43.028"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>cloudwiz</arg>
+</arguments>
+<assign>
+<var>${search_billing_ac}</var>
+</assign>
+<msg timestamp="20220314 20:53:43.029" level="INFO">${search_billing_ac} = cloudwiz</msg>
+<status status="PASS" starttime="20220314 20:53:43.029" endtime="20220314 20:53:43.030"></status>
+</kw>
+<kw name="Billing Account.Perform action on Billing Account" library="PageHelper">
+<arguments>
+<arg>${search_billing_ac}</arg>
+</arguments>
+<kw name="Get Page Handle" library="CommonHelper">
+<assign>
+<var>${page}</var>
+</assign>
+<kw name="Get Page Object" library="PlaywrightCore">
+<assign>
+<var>${page_handle}</var>
+</assign>
+<msg timestamp="20220314 20:53:43.034" level="INFO">${page_handle} = &lt;Page url='https://mindsnxt.cloudwiz.xyz/cost'&gt;</msg>
+<status status="PASS" starttime="20220314 20:53:43.033" endtime="20220314 20:53:43.034"></status>
+</kw>
+<msg timestamp="20220314 20:53:43.035" level="INFO">${page} = &lt;Page url='https://mindsnxt.cloudwiz.xyz/cost'&gt;</msg>
+<status status="PASS" starttime="20220314 20:53:43.032" endtime="20220314 20:53:43.035"></status>
+</kw>
+<kw name="Click Billing Menu" library="BillingAccount">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<msg timestamp="20220314 20:54:14.477" level="FAIL">TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for selector "i"
+  selector resolved to visible &lt;i l10n-title="" title="Close" l10ntranslate="" ari…&gt;&lt;/i&gt;
+attempting click action
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #1
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #2
+  waiting 20ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #3
+  waiting 100ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #4
+  waiting 100ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #5
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #6
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #7
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #8
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #9
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #10
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #11
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #12
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #13
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #14
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #15
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #16
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #17
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #18
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #19
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #20
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #21
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #22
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #23
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #24
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #25
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #26
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #27
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #28
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #29
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #30
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #31
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #32
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #33
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #34
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #35
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #36
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #37
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #38
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #39
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #40
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #41
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #42
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #43
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #44
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #45
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #46
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #47
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #48
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #49
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #50
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #51
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #52
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #53
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #54
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #55
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #56
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #57
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #58
+  waiting 500ms
+============================================================</msg>
+<status status="FAIL" starttime="20220314 20:53:43.035" endtime="20220314 20:54:14.479"></status>
+</kw>
+<status status="FAIL" starttime="20220314 20:53:43.030" endtime="20220314 20:54:14.480"></status>
+</kw>
+<kw name="Close Cloudwiz Application" library="CommonHelper" type="teardown">
+<kw name="Logout Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 20:54:14.484" endtime="20220314 20:54:26.409"></status>
+</kw>
+<kw name="Close Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 20:54:26.410" endtime="20220314 20:54:26.731"></status>
+</kw>
+<status status="PASS" starttime="20220314 20:54:14.481" endtime="20220314 20:54:26.732"></status>
+</kw>
+<status status="FAIL" starttime="20220314 20:52:52.564" endtime="20220314 20:54:26.732" critical="yes">TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for selector "i"
+  selector resolved to visible &lt;i l10n-title="" title="Close" l10ntranslate="" ari…&gt;&lt;/i&gt;
+attempting click action
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #1
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #2
+  waiting 20ms
+  waiting for element to be visible, enabled and stable
+    [ Message content over the limit has been removed. ]
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #56
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #57
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #58
+  waiting 500ms
+============================================================</status>
+</test>
+<doc>This is a Billing test file with Robot Framework</doc>
+<status status="FAIL" starttime="20220314 20:51:57.141" endtime="20220314 20:54:34.678"></status>
+</suite>
+<suite id="s1-s2" name="b UsageTest" source="C:\Users\Medhana Harihar\PycharmProjects\Playwright_RobotFramework\Test\b_UsageTest.robot">
+<kw name="Launch Browser Engine" library="CommonHelper" type="setup">
+<kw name="Launch Browser" library="PlaywrightCore">
+<arguments>
+<arg>browser_name=chromium</arg>
+</arguments>
+<msg timestamp="20220314 20:55:06.466" level="INFO">Opening Browser : chromium</msg>
+<status status="PASS" starttime="20220314 20:54:54.676" endtime="20220314 20:55:06.467"></status>
+</kw>
+<status status="PASS" starttime="20220314 20:54:54.675" endtime="20220314 20:55:06.467"></status>
+</kw>
+<kw name="Quit Opened Browser" library="CommonHelper" type="teardown">
+<kw name="Close Browser" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 20:56:27.786" endtime="20220314 20:56:33.852"></status>
+</kw>
+<status status="PASS" starttime="20220314 20:56:27.784" endtime="20220314 20:56:33.853"></status>
+</kw>
+<test id="s1-s2-t1" name=" Usage Account File Test Case">
+<kw name="Open Cloudwiz Application" library="CommonHelper" type="setup">
+<kw name="Open Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 20:55:06.634" endtime="20220314 20:55:45.366"></status>
+</kw>
+<kw name="Login Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 20:55:45.368" endtime="20220314 20:56:06.720"></status>
+</kw>
+<kw name="Take Screenshot" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 20:56:06.721" endtime="20220314 20:56:08.082"></status>
+</kw>
+<status status="PASS" starttime="20220314 20:55:06.630" endtime="20220314 20:56:08.083"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"This is usage account test case"</arg>
+</arguments>
+<msg timestamp="20220314 20:56:08.084" level="INFO">"This is usage account test case"</msg>
+<status status="PASS" starttime="20220314 20:56:08.083" endtime="20220314 20:56:08.084"></status>
+</kw>
+<kw name="Usage Account.Perform action on Usage Account" library="PageHelper">
+<kw name="Get Page Handle" library="CommonHelper">
+<assign>
+<var>${page}</var>
+</assign>
+<kw name="Get Page Object" library="PlaywrightCore">
+<assign>
+<var>${page_handle}</var>
+</assign>
+<msg timestamp="20220314 20:56:08.089" level="INFO">${page_handle} = &lt;Page url='https://mindsnxt.cloudwiz.xyz/cost'&gt;</msg>
+<status status="PASS" starttime="20220314 20:56:08.087" endtime="20220314 20:56:08.089"></status>
+</kw>
+<msg timestamp="20220314 20:56:08.090" level="INFO">${page} = &lt;Page url='https://mindsnxt.cloudwiz.xyz/cost'&gt;</msg>
+<status status="PASS" starttime="20220314 20:56:08.086" endtime="20220314 20:56:08.090"></status>
+</kw>
+<kw name="Click Usage Menu" library="UsageAccount">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 20:56:08.091" endtime="20220314 20:56:10.104"></status>
+</kw>
+<kw name="Click Usage Admin" library="UsageAccount">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 20:56:10.104" endtime="20220314 20:56:11.804"></status>
+</kw>
+<kw name="Click Usage Button" library="UsageAccount">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 20:56:11.804" endtime="20220314 20:56:13.177"></status>
+</kw>
+<kw name="Click Usage Help" library="UsageAccount">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 20:56:13.178" endtime="20220314 20:56:15.127"></status>
+</kw>
+<kw name="Click Create Usage Ac" library="UsageAccount">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 20:56:15.128" endtime="20220314 20:56:17.535"></status>
+</kw>
+<kw name="Click U Cloudformation" library="UsageAccount">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 20:56:17.536" endtime="20220314 20:56:19.425"></status>
+</kw>
+<status status="PASS" starttime="20220314 20:56:08.085" endtime="20220314 20:56:19.426"></status>
+</kw>
+<kw name="Close Cloudwiz Application" library="CommonHelper" type="teardown">
+<kw name="Logout Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 20:56:19.428" endtime="20220314 20:56:26.698"></status>
+</kw>
+<kw name="Close Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 20:56:26.698" endtime="20220314 20:56:27.781"></status>
+</kw>
+<status status="PASS" starttime="20220314 20:56:19.427" endtime="20220314 20:56:27.781"></status>
+</kw>
+<status status="PASS" starttime="20220314 20:55:06.468" endtime="20220314 20:56:27.781" critical="yes"></status>
+</test>
+<doc>This is a Usage test file with Robot Framework</doc>
+<status status="PASS" starttime="20220314 20:54:51.550" endtime="20220314 20:56:33.853"></status>
+</suite>
+<suite id="s1-s3" name="c UserTest" source="C:\Users\Medhana Harihar\PycharmProjects\Playwright_RobotFramework\Test\c_UserTest.robot">
+<kw name="Launch Browser Engine" library="CommonHelper" type="setup">
+<kw name="Launch Browser" library="PlaywrightCore">
+<arguments>
+<arg>browser_name=chromium</arg>
+</arguments>
+<msg timestamp="20220314 20:57:06.595" level="INFO">Opening Browser : chromium</msg>
+<status status="PASS" starttime="20220314 20:56:56.805" endtime="20220314 20:57:06.596"></status>
+</kw>
+<status status="PASS" starttime="20220314 20:56:56.804" endtime="20220314 20:57:06.596"></status>
+</kw>
+<kw name="Quit Opened Browser" library="CommonHelper" type="teardown">
+<kw name="Close Browser" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 20:58:22.766" endtime="20220314 20:58:33.104"></status>
+</kw>
+<status status="PASS" starttime="20220314 20:58:22.764" endtime="20220314 20:58:33.105"></status>
+</kw>
+<test id="s1-s3-t1" name="User File Test Case">
+<kw name="Open Cloudwiz Application" library="CommonHelper" type="setup">
+<kw name="Open Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 20:57:06.598" endtime="20220314 20:57:14.338"></status>
+</kw>
+<kw name="Login Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 20:57:14.338" endtime="20220314 20:57:34.151"></status>
+</kw>
+<kw name="Take Screenshot" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 20:57:34.152" endtime="20220314 20:57:35.677"></status>
+</kw>
+<status status="PASS" starttime="20220314 20:57:06.597" endtime="20220314 20:57:35.678"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"This is user test case"</arg>
+</arguments>
+<msg timestamp="20220314 20:57:35.679" level="INFO">"This is user test case"</msg>
+<status status="PASS" starttime="20220314 20:57:35.678" endtime="20220314 20:57:35.679"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>Abdul Automation User</arg>
+</arguments>
+<assign>
+<var>${name}</var>
+</assign>
+<msg timestamp="20220314 20:57:35.680" level="INFO">${name} = Abdul Automation User</msg>
+<status status="PASS" starttime="20220314 20:57:35.679" endtime="20220314 20:57:35.680"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>abdul.khader+automation@mindsnxt.com</arg>
+</arguments>
+<assign>
+<var>${email}</var>
+</assign>
+<msg timestamp="20220314 20:57:35.681" level="INFO">${email} = abdul.khader+automation@mindsnxt.com</msg>
+<status status="PASS" starttime="20220314 20:57:35.680" endtime="20220314 20:57:35.681"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>abdul.khader+automation</arg>
+</arguments>
+<assign>
+<var>${user}</var>
+</assign>
+<msg timestamp="20220314 20:57:35.681" level="INFO">${user} = abdul.khader+automation</msg>
+<status status="PASS" starttime="20220314 20:57:35.681" endtime="20220314 20:57:35.681"></status>
+</kw>
+<kw name="Users.Get Data from user" library="PageHelper">
+<arguments>
+<arg>${name}</arg>
+<arg>${email}</arg>
+<arg>${user}</arg>
+</arguments>
+<kw name="Get Page Handle" library="CommonHelper">
+<assign>
+<var>${page}</var>
+</assign>
+<kw name="Get Page Object" library="PlaywrightCore">
+<assign>
+<var>${page_handle}</var>
+</assign>
+<msg timestamp="20220314 20:57:35.685" level="INFO">${page_handle} = &lt;Page url='https://mindsnxt.cloudwiz.xyz/cost'&gt;</msg>
+<status status="PASS" starttime="20220314 20:57:35.684" endtime="20220314 20:57:35.685"></status>
+</kw>
+<msg timestamp="20220314 20:57:35.686" level="INFO">${page} = &lt;Page url='https://mindsnxt.cloudwiz.xyz/cost'&gt;</msg>
+<status status="PASS" starttime="20220314 20:57:35.683" endtime="20220314 20:57:35.686"></status>
+</kw>
+<kw name="Click User Menu" library="User">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 20:57:35.686" endtime="20220314 20:57:41.575"></status>
+</kw>
+<kw name="Click Admin" library="User">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 20:57:41.576" endtime="20220314 20:57:42.812"></status>
+</kw>
+<kw name="Click User Module" library="User">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 20:57:42.813" endtime="20220314 20:57:44.189"></status>
+</kw>
+<kw name="Click User Help" library="User">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 20:57:44.189" endtime="20220314 20:57:45.798"></status>
+</kw>
+<kw name="Click Create User" library="User">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 20:57:45.799" endtime="20220314 20:57:47.138"></status>
+</kw>
+<kw name="Click Name" library="User">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 20:57:47.139" endtime="20220314 20:57:48.331"></status>
+</kw>
+<kw name="Fill Name" library="User">
+<arguments>
+<arg>${page}</arg>
+<arg>${u_name}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 20:57:48.332" endtime="20220314 20:57:49.461"></status>
+</kw>
+<kw name="Click Email Id" library="User">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 20:57:49.462" endtime="20220314 20:57:51.008"></status>
+</kw>
+<kw name="Fill Email Id" library="User">
+<arguments>
+<arg>${page}</arg>
+<arg>${email_id}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 20:57:51.009" endtime="20220314 20:57:52.195"></status>
+</kw>
+<kw name="Click Select Roles" library="User">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 20:57:52.196" endtime="20220314 20:57:53.373"></status>
+</kw>
+<kw name="Click Owner" library="User">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 20:57:53.374" endtime="20220314 20:57:54.461"></status>
+</kw>
+<kw name="Click Administrator" library="User">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 20:57:54.462" endtime="20220314 20:57:55.557"></status>
+</kw>
+<kw name="Click Name" library="User">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 20:57:55.557" endtime="20220314 20:57:56.689"></status>
+</kw>
+<kw name="Click Select Team" library="User">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 20:57:56.690" endtime="20220314 20:57:57.839"></status>
+</kw>
+<kw name="Click Team Owner" library="User">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 20:57:57.840" endtime="20220314 20:57:58.915"></status>
+</kw>
+<kw name="Click Name" library="User">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 20:57:58.915" endtime="20220314 20:57:59.996"></status>
+</kw>
+<kw name="Click Submit" library="User">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 20:57:59.996" endtime="20220314 20:58:04.117"></status>
+</kw>
+<kw name="Click Edit User" library="User">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 20:58:04.118" endtime="20220314 20:58:05.246"></status>
+</kw>
+<kw name="Click Cancel Edit User" library="User">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 20:58:05.246" endtime="20220314 20:58:06.354"></status>
+</kw>
+<kw name="Click Delete User" library="User">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 20:58:06.354" endtime="20220314 20:58:07.482"></status>
+</kw>
+<kw name="Click Cancel Delete User" library="User">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 20:58:07.482" endtime="20220314 20:58:08.592"></status>
+</kw>
+<kw name="Click User Search" library="User">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 20:58:08.593" endtime="20220314 20:58:09.689"></status>
+</kw>
+<kw name="Fill User Search" library="User">
+<arguments>
+<arg>${page}</arg>
+<arg>${user}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 20:58:09.690" endtime="20220314 20:58:10.730"></status>
+</kw>
+<kw name="Click User Download" library="User">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 20:58:10.730" endtime="20220314 20:58:14.062"></status>
+</kw>
+<kw name="Click User Ui Setting" library="User">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 20:58:14.064" endtime="20220314 20:58:15.165"></status>
+</kw>
+<status status="PASS" starttime="20220314 20:57:35.682" endtime="20220314 20:58:15.166"></status>
+</kw>
+<kw name="Close Cloudwiz Application" library="CommonHelper" type="teardown">
+<kw name="Logout Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 20:58:15.169" endtime="20220314 20:58:22.371"></status>
+</kw>
+<kw name="Close Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 20:58:22.372" endtime="20220314 20:58:22.757"></status>
+</kw>
+<status status="PASS" starttime="20220314 20:58:15.167" endtime="20220314 20:58:22.759"></status>
+</kw>
+<status status="PASS" starttime="20220314 20:57:06.596" endtime="20220314 20:58:22.759" critical="yes"></status>
+</test>
+<doc>This is a User test file with Robot Framework</doc>
+<status status="PASS" starttime="20220314 20:56:54.127" endtime="20220314 20:58:33.105"></status>
+</suite>
+<suite id="s1-s4" name="d TeamTest" source="C:\Users\Medhana Harihar\PycharmProjects\Playwright_RobotFramework\Test\d_TeamTest.robot">
+<kw name="Launch Browser Engine" library="CommonHelper" type="setup">
+<kw name="Launch Browser" library="PlaywrightCore">
+<arguments>
+<arg>browser_name=chromium</arg>
+</arguments>
+<msg timestamp="20220314 20:58:45.862" level="INFO">Opening Browser : chromium</msg>
+<status status="PASS" starttime="20220314 20:58:39.902" endtime="20220314 20:58:45.863"></status>
+</kw>
+<status status="PASS" starttime="20220314 20:58:39.901" endtime="20220314 20:58:45.864"></status>
+</kw>
+<kw name="Quit Opened Browser" library="CommonHelper" type="teardown">
+<kw name="Close Browser" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 20:59:48.837" endtime="20220314 20:59:57.109"></status>
+</kw>
+<status status="PASS" starttime="20220314 20:59:48.836" endtime="20220314 20:59:57.110"></status>
+</kw>
+<test id="s1-s4-t1" name="Team File Test Case">
+<kw name="Open Cloudwiz Application" library="CommonHelper" type="setup">
+<kw name="Open Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 20:58:45.868" endtime="20220314 20:58:50.496"></status>
+</kw>
+<kw name="Login Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 20:58:50.497" endtime="20220314 20:59:10.608"></status>
+</kw>
+<kw name="Take Screenshot" library="PlaywrightCore">
+<msg timestamp="20220314 20:59:40.646" level="FAIL">TimeoutError: Timeout 30000ms exceeded.</msg>
+<status status="FAIL" starttime="20220314 20:59:10.608" endtime="20220314 20:59:40.647"></status>
+</kw>
+<status status="FAIL" starttime="20220314 20:58:45.866" endtime="20220314 20:59:40.648"></status>
+</kw>
+<kw name="Close Cloudwiz Application" library="CommonHelper" type="teardown">
+<kw name="Logout Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 20:59:40.651" endtime="20220314 20:59:48.481"></status>
+</kw>
+<kw name="Close Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 20:59:48.482" endtime="20220314 20:59:48.831"></status>
+</kw>
+<status status="PASS" starttime="20220314 20:59:40.648" endtime="20220314 20:59:48.832"></status>
+</kw>
+<status status="FAIL" starttime="20220314 20:58:45.865" endtime="20220314 20:59:48.832" critical="yes">Setup failed:
+TimeoutError: Timeout 30000ms exceeded.</status>
+</test>
+<doc>This is a Team test file with Robot Framework</doc>
+<status status="FAIL" starttime="20220314 20:58:38.391" endtime="20220314 20:59:57.110"></status>
+</suite>
+<suite id="s1-s5" name="e AlertTest" source="C:\Users\Medhana Harihar\PycharmProjects\Playwright_RobotFramework\Test\e_AlertTest.robot">
+<kw name="Launch Browser Engine" library="CommonHelper" type="setup">
+<kw name="Launch Browser" library="PlaywrightCore">
+<arguments>
+<arg>browser_name=chromium</arg>
+</arguments>
+<msg timestamp="20220314 21:00:08.369" level="INFO">Opening Browser : chromium</msg>
+<status status="PASS" starttime="20220314 21:00:03.150" endtime="20220314 21:00:08.369"></status>
+</kw>
+<status status="PASS" starttime="20220314 21:00:03.149" endtime="20220314 21:00:08.370"></status>
+</kw>
+<kw name="Quit Opened Browser" library="CommonHelper" type="teardown">
+<kw name="Close Browser" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 21:01:27.056" endtime="20220314 21:01:38.333"></status>
+</kw>
+<status status="PASS" starttime="20220314 21:01:27.055" endtime="20220314 21:01:38.334"></status>
+</kw>
+<test id="s1-s5-t1" name="Alerts File Test Case">
+<kw name="Open Cloudwiz Application" library="CommonHelper" type="setup">
+<kw name="Open Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 21:00:08.373" endtime="20220314 21:00:14.170"></status>
+</kw>
+<kw name="Login Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 21:00:14.171" endtime="20220314 21:00:34.222"></status>
+</kw>
+<kw name="Take Screenshot" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 21:00:34.223" endtime="20220314 21:00:35.065"></status>
+</kw>
+<status status="PASS" starttime="20220314 21:00:08.372" endtime="20220314 21:00:35.065"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"This is Alert test case"</arg>
+</arguments>
+<msg timestamp="20220314 21:00:35.067" level="INFO">"This is Alert test case"</msg>
+<status status="PASS" starttime="20220314 21:00:35.066" endtime="20220314 21:00:35.067"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<assign>
+<var>${cost}</var>
+</assign>
+<msg timestamp="20220314 21:00:35.069" level="INFO">${cost} = 3</msg>
+<status status="PASS" starttime="20220314 21:00:35.068" endtime="20220314 21:00:35.069"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>abdul.khader</arg>
+</arguments>
+<assign>
+<var>${search}</var>
+</assign>
+<msg timestamp="20220314 21:00:35.070" level="INFO">${search} = abdul.khader</msg>
+<status status="PASS" starttime="20220314 21:00:35.070" endtime="20220314 21:00:35.071"></status>
+</kw>
+<kw name="Alerts.Perform action on Alert" library="PageHelper">
+<arguments>
+<arg>${cost}</arg>
+<arg>${search}</arg>
+</arguments>
+<kw name="Get Page Handle" library="CommonHelper">
+<assign>
+<var>${page}</var>
+</assign>
+<kw name="Get Page Object" library="PlaywrightCore">
+<assign>
+<var>${page_handle}</var>
+</assign>
+<msg timestamp="20220314 21:00:35.075" level="INFO">${page_handle} = &lt;Page url='https://mindsnxt.cloudwiz.xyz/cost'&gt;</msg>
+<status status="PASS" starttime="20220314 21:00:35.075" endtime="20220314 21:00:35.075"></status>
+</kw>
+<msg timestamp="20220314 21:00:35.076" level="INFO">${page} = &lt;Page url='https://mindsnxt.cloudwiz.xyz/cost'&gt;</msg>
+<status status="PASS" starttime="20220314 21:00:35.073" endtime="20220314 21:00:35.077"></status>
+</kw>
+<kw name="Click Alert Menu" library="Alert">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:00:35.077" endtime="20220314 21:00:37.472"></status>
+</kw>
+<kw name="Click Alert Admin" library="Alert">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:00:37.473" endtime="20220314 21:00:38.750"></status>
+</kw>
+<kw name="Click On Alerts" library="Alert">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:00:38.750" endtime="20220314 21:00:40.136"></status>
+</kw>
+<kw name="Click Alert Help" library="Alert">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:00:40.136" endtime="20220314 21:00:42.244"></status>
+</kw>
+<kw name="Click Create Alert" library="Alert">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:00:42.245" endtime="20220314 21:00:43.722"></status>
+</kw>
+<kw name="Click Alert Rule" library="Alert">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:00:43.723" endtime="20220314 21:00:45.525"></status>
+</kw>
+<kw name="Click Daily Cost" library="Alert">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:00:45.526" endtime="20220314 21:00:47.131"></status>
+</kw>
+<kw name="Click Provider" library="Alert">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:00:47.132" endtime="20220314 21:00:48.711"></status>
+</kw>
+<kw name="Click Of Provider" library="Alert">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:00:48.711" endtime="20220314 21:00:49.809"></status>
+</kw>
+<kw name="Click Select Drop" library="Alert">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:00:49.809" endtime="20220314 21:00:50.942"></status>
+</kw>
+<kw name="Click Gcp" library="Alert">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:00:50.942" endtime="20220314 21:00:52.030"></status>
+</kw>
+<kw name="Click Close Dropdown" library="Alert">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:00:52.030" endtime="20220314 21:00:53.115"></status>
+</kw>
+<kw name="Click Is More Than" library="Alert">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:00:53.115" endtime="20220314 21:00:54.317"></status>
+</kw>
+<kw name="Click Is Going Up By" library="Alert">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:00:54.318" endtime="20220314 21:00:55.802"></status>
+</kw>
+<kw name="Click Send Cost" library="Alert">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:00:55.802" endtime="20220314 21:00:56.920"></status>
+</kw>
+<kw name="Send Cost" library="Alert">
+<arguments>
+<arg>${page}</arg>
+<arg>${cost}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:00:56.920" endtime="20220314 21:00:58.023"></status>
+</kw>
+<kw name="Click Notify User" library="Alert">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:00:58.023" endtime="20220314 21:00:59.137"></status>
+</kw>
+<kw name="Click User Id" library="Alert">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:00:59.137" endtime="20220314 21:01:00.258"></status>
+</kw>
+<kw name="Close Notify" library="Alert">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:01:00.259" endtime="20220314 21:01:01.377"></status>
+</kw>
+<kw name="Click Notify Ch" library="Alert">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:01:01.378" endtime="20220314 21:01:02.515"></status>
+</kw>
+<kw name="Click Sel Ch" library="Alert">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:01:02.516" endtime="20220314 21:01:03.640"></status>
+</kw>
+<kw name="Close Notify" library="Alert">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:01:03.641" endtime="20220314 21:01:04.749"></status>
+</kw>
+<kw name="Click Create" library="Alert">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:01:04.749" endtime="20220314 21:01:05.877"></status>
+</kw>
+<kw name="Click Edit" library="Alert">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:01:05.877" endtime="20220314 21:01:07.695"></status>
+</kw>
+<kw name="Click Cancel" library="Alert">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:01:07.697" endtime="20220314 21:01:08.847"></status>
+</kw>
+<kw name="Click Delete" library="Alert">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:01:08.847" endtime="20220314 21:01:10.002"></status>
+</kw>
+<kw name="Click D Cancel" library="Alert">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:01:10.003" endtime="20220314 21:01:11.119"></status>
+</kw>
+<kw name="Click Search" library="Alert">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:01:11.120" endtime="20220314 21:01:12.214"></status>
+</kw>
+<kw name="Enter To Search" library="Alert">
+<arguments>
+<arg>${page}</arg>
+<arg>${search}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:01:12.214" endtime="20220314 21:01:13.557"></status>
+</kw>
+<kw name="Click Alert Download" library="Alert">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:01:13.559" endtime="20220314 21:01:17.115"></status>
+</kw>
+<kw name="Click Alert Ui Setting" library="Alert">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:01:17.116" endtime="20220314 21:01:18.237"></status>
+</kw>
+<status status="PASS" starttime="20220314 21:00:35.071" endtime="20220314 21:01:18.238"></status>
+</kw>
+<kw name="Close Cloudwiz Application" library="CommonHelper" type="teardown">
+<kw name="Logout Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 21:01:18.241" endtime="20220314 21:01:26.538"></status>
+</kw>
+<kw name="Close Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 21:01:26.540" endtime="20220314 21:01:27.049"></status>
+</kw>
+<status status="PASS" starttime="20220314 21:01:18.239" endtime="20220314 21:01:27.050"></status>
+</kw>
+<status status="PASS" starttime="20220314 21:00:08.370" endtime="20220314 21:01:27.050" critical="yes"></status>
+</test>
+<doc>This is a Alert test file with Robot Framework</doc>
+<status status="PASS" starttime="20220314 21:00:01.590" endtime="20220314 21:01:38.334"></status>
+</suite>
+<suite id="s1-s6" name="f IntegrationTest" source="C:\Users\Medhana Harihar\PycharmProjects\Playwright_RobotFramework\Test\f_IntegrationTest.robot">
+<kw name="Launch Browser Engine" library="CommonHelper" type="setup">
+<kw name="Launch Browser" library="PlaywrightCore">
+<arguments>
+<arg>browser_name=chromium</arg>
+</arguments>
+<msg timestamp="20220314 21:01:53.264" level="INFO">Opening Browser : chromium</msg>
+<status status="PASS" starttime="20220314 21:01:45.674" endtime="20220314 21:01:53.264"></status>
+</kw>
+<status status="PASS" starttime="20220314 21:01:45.673" endtime="20220314 21:01:53.265"></status>
+</kw>
+<kw name="Quit Opened Browser" library="CommonHelper" type="teardown">
+<kw name="Close Browser" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 21:03:07.687" endtime="20220314 21:03:21.075"></status>
+</kw>
+<status status="PASS" starttime="20220314 21:03:07.686" endtime="20220314 21:03:21.075"></status>
+</kw>
+<test id="s1-s6-t1" name="Integration File Test Case">
+<kw name="Open Cloudwiz Application" library="CommonHelper" type="setup">
+<kw name="Open Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 21:01:53.269" endtime="20220314 21:02:02.628"></status>
+</kw>
+<kw name="Login Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 21:02:02.629" endtime="20220314 21:02:22.391"></status>
+</kw>
+<kw name="Take Screenshot" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 21:02:22.392" endtime="20220314 21:02:23.595"></status>
+</kw>
+<status status="PASS" starttime="20220314 21:01:53.267" endtime="20220314 21:02:23.596"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"This is user test case"</arg>
+</arguments>
+<msg timestamp="20220314 21:02:23.597" level="INFO">"This is user test case"</msg>
+<status status="PASS" starttime="20220314 21:02:23.596" endtime="20220314 21:02:23.597"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>Automation Slack Webhook</arg>
+</arguments>
+<assign>
+<var>${name}</var>
+</assign>
+<msg timestamp="20220314 21:02:23.600" level="INFO">${name} = Automation Slack Webhook</msg>
+<status status="PASS" starttime="20220314 21:02:23.598" endtime="20220314 21:02:23.600"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>This is Automation Slack Webhook</arg>
+</arguments>
+<assign>
+<var>${desc}</var>
+</assign>
+<msg timestamp="20220314 21:02:23.602" level="INFO">${desc} = This is Automation Slack Webhook</msg>
+<status status="PASS" starttime="20220314 21:02:23.601" endtime="20220314 21:02:23.602"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>https://hooks.slack.com/services/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</arg>
+</arguments>
+<assign>
+<var>${address}</var>
+</assign>
+<msg timestamp="20220314 21:02:23.604" level="INFO">${address} = https://hooks.slack.com/services/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</msg>
+<status status="PASS" starttime="20220314 21:02:23.603" endtime="20220314 21:02:23.604"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>Automation Slack Webhook</arg>
+</arguments>
+<assign>
+<var>${integration}</var>
+</assign>
+<msg timestamp="20220314 21:02:23.606" level="INFO">${integration} = Automation Slack Webhook</msg>
+<status status="PASS" starttime="20220314 21:02:23.605" endtime="20220314 21:02:23.606"></status>
+</kw>
+<kw name="Integration.Get Data from integration" library="PageHelper">
+<arguments>
+<arg>${name}</arg>
+<arg>${desc}</arg>
+<arg>${address}</arg>
+<arg>${integration}</arg>
+</arguments>
+<kw name="Get Page Handle" library="CommonHelper">
+<assign>
+<var>${page}</var>
+</assign>
+<kw name="Get Page Object" library="PlaywrightCore">
+<assign>
+<var>${page_handle}</var>
+</assign>
+<msg timestamp="20220314 21:02:23.613" level="INFO">${page_handle} = &lt;Page url='https://mindsnxt.cloudwiz.xyz/cost'&gt;</msg>
+<status status="PASS" starttime="20220314 21:02:23.612" endtime="20220314 21:02:23.613"></status>
+</kw>
+<msg timestamp="20220314 21:02:23.614" level="INFO">${page} = &lt;Page url='https://mindsnxt.cloudwiz.xyz/cost'&gt;</msg>
+<status status="PASS" starttime="20220314 21:02:23.611" endtime="20220314 21:02:23.614"></status>
+</kw>
+<kw name="Click Integration Menu" library="Integration">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:02:23.615" endtime="20220314 21:02:29.809"></status>
+</kw>
+<kw name="Click Integration Admin" library="Integration">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:02:29.811" endtime="20220314 21:02:31.013"></status>
+</kw>
+<kw name="Click Integration Module" library="Integration">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:02:31.014" endtime="20220314 21:02:32.306"></status>
+</kw>
+<kw name="Click Integration Help" library="Integration">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:02:32.307" endtime="20220314 21:02:35.016"></status>
+</kw>
+<kw name="Click Create Integration" library="Integration">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:02:35.017" endtime="20220314 21:02:36.458"></status>
+</kw>
+<kw name="Click Integration Name" library="Integration">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:02:36.459" endtime="20220314 21:02:37.687"></status>
+</kw>
+<kw name="Fill Integration Name" library="Integration">
+<arguments>
+<arg>${page}</arg>
+<arg>${i_name}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:02:37.687" endtime="20220314 21:02:38.749"></status>
+</kw>
+<kw name="Click Integration Desc" library="Integration">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:02:38.749" endtime="20220314 21:02:39.863"></status>
+</kw>
+<kw name="Fill Integration Desc" library="Integration">
+<arguments>
+<arg>${page}</arg>
+<arg>${desc}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:02:39.864" endtime="20220314 21:02:40.934"></status>
+</kw>
+<kw name="Click App" library="Integration">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:02:40.935" endtime="20220314 21:02:42.150"></status>
+</kw>
+<kw name="Select Slack" library="Integration">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:02:42.150" endtime="20220314 21:02:43.237"></status>
+</kw>
+<kw name="Click Type" library="Integration">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:02:43.237" endtime="20220314 21:02:44.336"></status>
+</kw>
+<kw name="Select Webhook" library="Integration">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:02:44.336" endtime="20220314 21:02:45.454"></status>
+</kw>
+<kw name="Click Address" library="Integration">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:02:45.454" endtime="20220314 21:02:46.562"></status>
+</kw>
+<kw name="Fill Address" library="Integration">
+<arguments>
+<arg>${page}</arg>
+<arg>${address}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:02:46.562" endtime="20220314 21:02:47.612"></status>
+</kw>
+<kw name="Click I Create" library="Integration">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:02:47.612" endtime="20220314 21:02:48.697"></status>
+</kw>
+<kw name="Click Edit Integration" library="Integration">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:02:48.698" endtime="20220314 21:02:50.189"></status>
+</kw>
+<kw name="Click Cancel Edit Integration" library="Integration">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:02:50.190" endtime="20220314 21:02:51.313"></status>
+</kw>
+<kw name="Click Delete Integration" library="Integration">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:02:51.314" endtime="20220314 21:02:52.462"></status>
+</kw>
+<kw name="Click Cancel Delete Integration" library="Integration">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:02:52.463" endtime="20220314 21:02:53.573"></status>
+</kw>
+<kw name="Click Integration Search" library="Integration">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:02:53.573" endtime="20220314 21:02:54.646"></status>
+</kw>
+<kw name="Fill Integration Search" library="Integration">
+<arguments>
+<arg>${page}</arg>
+<arg>${integration}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:02:54.647" endtime="20220314 21:02:55.692"></status>
+</kw>
+<kw name="Click Integration Download" library="Integration">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:02:55.692" endtime="20220314 21:02:58.962"></status>
+</kw>
+<kw name="Click Integration Ui Setting" library="Integration">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:02:58.963" endtime="20220314 21:03:00.058"></status>
+</kw>
+<status status="PASS" starttime="20220314 21:02:23.606" endtime="20220314 21:03:00.058"></status>
+</kw>
+<kw name="Close Cloudwiz Application" library="CommonHelper" type="teardown">
+<kw name="Logout Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 21:03:00.060" endtime="20220314 21:03:07.420"></status>
+</kw>
+<kw name="Close Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 21:03:07.421" endtime="20220314 21:03:07.683"></status>
+</kw>
+<status status="PASS" starttime="20220314 21:03:00.059" endtime="20220314 21:03:07.684"></status>
+</kw>
+<status status="PASS" starttime="20220314 21:01:53.265" endtime="20220314 21:03:07.684" critical="yes"></status>
+</test>
+<doc>This is a integration test file with Robot Framework</doc>
+<status status="PASS" starttime="20220314 21:01:43.500" endtime="20220314 21:03:21.075"></status>
+</suite>
+<suite id="s1-s7" name="g SSOTest" source="C:\Users\Medhana Harihar\PycharmProjects\Playwright_RobotFramework\Test\g_SSOTest.robot">
+<kw name="Launch Browser Engine" library="CommonHelper" type="setup">
+<kw name="Launch Browser" library="PlaywrightCore">
+<arguments>
+<arg>browser_name=chromium</arg>
+</arguments>
+<msg timestamp="20220314 21:03:34.901" level="INFO">Opening Browser : chromium</msg>
+<status status="PASS" starttime="20220314 21:03:28.539" endtime="20220314 21:03:34.901"></status>
+</kw>
+<status status="PASS" starttime="20220314 21:03:28.539" endtime="20220314 21:03:34.902"></status>
+</kw>
+<kw name="Quit Opened Browser" library="CommonHelper" type="teardown">
+<kw name="Close Browser" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 21:04:27.835" endtime="20220314 21:04:33.905"></status>
+</kw>
+<status status="PASS" starttime="20220314 21:04:27.833" endtime="20220314 21:04:33.906"></status>
+</kw>
+<test id="s1-s7-t1" name="SSO File Test Case">
+<kw name="Open Cloudwiz Application" library="CommonHelper" type="setup">
+<kw name="Open Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 21:03:34.905" endtime="20220314 21:03:44.763"></status>
+</kw>
+<kw name="Login Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 21:03:44.764" endtime="20220314 21:04:05.152"></status>
+</kw>
+<kw name="Take Screenshot" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 21:04:05.153" endtime="20220314 21:04:08.508"></status>
+</kw>
+<status status="PASS" starttime="20220314 21:03:34.904" endtime="20220314 21:04:08.509"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"This is sso test case"</arg>
+</arguments>
+<msg timestamp="20220314 21:04:08.510" level="INFO">"This is sso test case"</msg>
+<status status="PASS" starttime="20220314 21:04:08.510" endtime="20220314 21:04:08.510"></status>
+</kw>
+<kw name="SSO.Perform action on SSO" library="PageHelper">
+<kw name="Get Page Handle" library="CommonHelper">
+<assign>
+<var>${page}</var>
+</assign>
+<kw name="Get Page Object" library="PlaywrightCore">
+<assign>
+<var>${page_handle}</var>
+</assign>
+<msg timestamp="20220314 21:04:08.515" level="INFO">${page_handle} = &lt;Page url='https://mindsnxt.cloudwiz.xyz/cost'&gt;</msg>
+<status status="PASS" starttime="20220314 21:04:08.514" endtime="20220314 21:04:08.515"></status>
+</kw>
+<msg timestamp="20220314 21:04:08.517" level="INFO">${page} = &lt;Page url='https://mindsnxt.cloudwiz.xyz/cost'&gt;</msg>
+<status status="PASS" starttime="20220314 21:04:08.512" endtime="20220314 21:04:08.517"></status>
+</kw>
+<kw name="Click Sso Menu" library="SSO">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:04:08.518" endtime="20220314 21:04:10.848"></status>
+</kw>
+<kw name="Click Sso Admin" library="SSO">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:04:10.848" endtime="20220314 21:04:12.034"></status>
+</kw>
+<kw name="Click Sso Button" library="SSO">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:04:12.035" endtime="20220314 21:04:13.369"></status>
+</kw>
+<kw name="Click Sso Help" library="SSO">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:04:13.371" endtime="20220314 21:04:15.167"></status>
+</kw>
+<kw name="Click Sso Edit" library="SSO">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:04:15.167" endtime="20220314 21:04:16.672"></status>
+</kw>
+<kw name="Click Sso Cancel" library="SSO">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:04:16.672" endtime="20220314 21:04:17.859"></status>
+</kw>
+<kw name="Click Sso Delete" library="SSO">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:04:17.860" endtime="20220314 21:04:18.945"></status>
+</kw>
+<kw name="Click Sso Delete No" library="SSO">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:04:18.945" endtime="20220314 21:04:20.193"></status>
+</kw>
+<status status="PASS" starttime="20220314 21:04:08.511" endtime="20220314 21:04:20.194"></status>
+</kw>
+<kw name="Close Cloudwiz Application" library="CommonHelper" type="teardown">
+<kw name="Logout Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 21:04:20.197" endtime="20220314 21:04:27.577"></status>
+</kw>
+<kw name="Close Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 21:04:27.579" endtime="20220314 21:04:27.825"></status>
+</kw>
+<status status="PASS" starttime="20220314 21:04:20.196" endtime="20220314 21:04:27.826"></status>
+</kw>
+<status status="PASS" starttime="20220314 21:03:34.902" endtime="20220314 21:04:27.826" critical="yes"></status>
+</test>
+<doc>This is a SSO test file with Robot Framework</doc>
+<status status="PASS" starttime="20220314 21:03:26.980" endtime="20220314 21:04:33.906"></status>
+</suite>
+<suite id="s1-s8" name="h APITest" source="C:\Users\Medhana Harihar\PycharmProjects\Playwright_RobotFramework\Test\h_APITest.robot">
+<kw name="Launch Browser Engine" library="CommonHelper" type="setup">
+<kw name="Launch Browser" library="PlaywrightCore">
+<arguments>
+<arg>browser_name=chromium</arg>
+</arguments>
+<msg timestamp="20220314 21:04:47.750" level="INFO">Opening Browser : chromium</msg>
+<status status="PASS" starttime="20220314 21:04:41.157" endtime="20220314 21:04:47.751"></status>
+</kw>
+<status status="PASS" starttime="20220314 21:04:41.156" endtime="20220314 21:04:47.751"></status>
+</kw>
+<kw name="Quit Opened Browser" library="CommonHelper" type="teardown">
+<kw name="Close Browser" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 21:06:24.255" endtime="20220314 21:06:28.566"></status>
+</kw>
+<status status="PASS" starttime="20220314 21:06:24.254" endtime="20220314 21:06:28.567"></status>
+</kw>
+<test id="s1-s8-t1" name="API File Test Case">
+<kw name="Open Cloudwiz Application" library="CommonHelper" type="setup">
+<kw name="Open Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 21:04:47.755" endtime="20220314 21:04:53.427"></status>
+</kw>
+<kw name="Login Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 21:04:53.427" endtime="20220314 21:05:14.957"></status>
+</kw>
+<kw name="Take Screenshot" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 21:05:14.958" endtime="20220314 21:05:15.626"></status>
+</kw>
+<status status="PASS" starttime="20220314 21:04:47.753" endtime="20220314 21:05:15.627"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"This is API test case"</arg>
+</arguments>
+<msg timestamp="20220314 21:05:15.629" level="INFO">"This is API test case"</msg>
+<status status="PASS" starttime="20220314 21:05:15.628" endtime="20220314 21:05:15.629"></status>
+</kw>
+<kw name="API.Perform action on API" library="PageHelper">
+<kw name="Get Page Handle" library="CommonHelper">
+<assign>
+<var>${page}</var>
+</assign>
+<kw name="Get Page Object" library="PlaywrightCore">
+<assign>
+<var>${page_handle}</var>
+</assign>
+<msg timestamp="20220314 21:05:15.637" level="INFO">${page_handle} = &lt;Page url='https://mindsnxt.cloudwiz.xyz/cost'&gt;</msg>
+<status status="PASS" starttime="20220314 21:05:15.637" endtime="20220314 21:05:15.638"></status>
+</kw>
+<msg timestamp="20220314 21:05:15.639" level="INFO">${page} = &lt;Page url='https://mindsnxt.cloudwiz.xyz/cost'&gt;</msg>
+<status status="PASS" starttime="20220314 21:05:15.631" endtime="20220314 21:05:15.639"></status>
+</kw>
+<kw name="Click Api Menu" library="API">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:05:15.640" endtime="20220314 21:05:17.421"></status>
+</kw>
+<kw name="Click Api Admin" library="API">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<msg timestamp="20220314 21:05:47.729" level="FAIL">TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for selector "text=Admin"
+  selector resolved to visible &lt;button l10ntranslate="" class="btn btn-link" _ngcontent…&gt;…&lt;/button&gt;
+attempting click action
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #1
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #2
+  waiting 20ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #3
+  waiting 100ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #4
+  waiting 100ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #5
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #6
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #7
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #8
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #9
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #10
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #11
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #12
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #13
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #14
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #15
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #16
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #17
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #18
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #19
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #20
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #21
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #22
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #23
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #24
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #25
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #26
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #27
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #28
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #29
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #30
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #31
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #32
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #33
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #34
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #35
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #36
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #37
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #38
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #39
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #40
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #41
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #42
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #43
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #44
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #45
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #46
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #47
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #48
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #49
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #50
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #51
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #52
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #53
+  waiting 500ms
+============================================================</msg>
+<status status="FAIL" starttime="20220314 21:05:17.422" endtime="20220314 21:05:47.733"></status>
+</kw>
+<status status="FAIL" starttime="20220314 21:05:15.629" endtime="20220314 21:05:47.735"></status>
+</kw>
+<kw name="Close Cloudwiz Application" library="CommonHelper" type="teardown">
+<kw name="Logout Application" library="PlaywrightCore">
+<msg timestamp="20220314 21:06:24.195" level="FAIL">TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for selector "text=Logout"
+  selector resolved to hidden &lt;button l10ntranslate="" ngbdropdownitem="" class="dropd…&gt;…&lt;/button&gt;
+attempting click action
+  waiting for element to be visible, enabled and stable
+    element is not visible - waiting...
+============================================================</msg>
+<status status="FAIL" starttime="20220314 21:05:47.739" endtime="20220314 21:06:24.195"></status>
+</kw>
+<kw name="Close Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 21:06:24.196" endtime="20220314 21:06:24.248"></status>
+</kw>
+<status status="FAIL" starttime="20220314 21:05:47.738" endtime="20220314 21:06:24.250">TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for selector "text=Logout"
+  selector resolved to hidden &lt;button l10ntranslate="" ngbdropdownitem="" class="dropd…&gt;…&lt;/button&gt;
+attempting click action
+  waiting for element to be visible, enabled and stable
+    element is not visible - waiting...
+============================================================</status>
+</kw>
+<status status="FAIL" starttime="20220314 21:04:47.752" endtime="20220314 21:06:24.250" critical="yes">TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for selector "text=Admin"
+  selector resolved to visible &lt;button l10ntranslate="" class="btn btn-link" _ngcontent…&gt;…&lt;/button&gt;
+attempting click action
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #1
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #2
+  waiting 20ms
+  waiting for element to be visible, enabled and stable
+    [ Message content over the limit has been removed. ]
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #51
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #52
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #53
+  waiting 500ms
+============================================================
+
+Also teardown failed:
+TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for selector "text=Logout"
+  selector resolved to hidden &lt;button l10ntranslate="" ngbdropdownitem="" class="dropd…&gt;…&lt;/button&gt;
+attempting click action
+  waiting for element to be visible, enabled and stable
+    element is not visible - waiting...
+============================================================</status>
+</test>
+<doc>This is a API test file with Robot Framework</doc>
+<status status="FAIL" starttime="20220314 21:04:39.642" endtime="20220314 21:06:28.567"></status>
+</suite>
+<suite id="s1-s9" name="i CostTest" source="C:\Users\Medhana Harihar\PycharmProjects\Playwright_RobotFramework\Test\i_CostTest.robot">
+<kw name="Launch Browser Engine" library="CommonHelper" type="setup">
+<kw name="Launch Browser" library="PlaywrightCore">
+<arguments>
+<arg>browser_name=chromium</arg>
+</arguments>
+<msg timestamp="20220314 21:06:54.367" level="INFO">Opening Browser : chromium</msg>
+<status status="PASS" starttime="20220314 21:06:45.543" endtime="20220314 21:06:54.367"></status>
+</kw>
+<status status="PASS" starttime="20220314 21:06:45.542" endtime="20220314 21:06:54.368"></status>
+</kw>
+<kw name="Quit Opened Browser" library="CommonHelper" type="teardown">
+<kw name="Close Browser" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 21:07:52.952" endtime="20220314 21:07:59.337"></status>
+</kw>
+<status status="PASS" starttime="20220314 21:07:52.950" endtime="20220314 21:07:59.338"></status>
+</kw>
+<test id="s1-s9-t1" name="Resources File Test Case">
+<kw name="Open Cloudwiz Application" library="CommonHelper" type="setup">
+<kw name="Open Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 21:06:54.387" endtime="20220314 21:07:00.770"></status>
+</kw>
+<kw name="Login Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 21:07:00.770" endtime="20220314 21:07:20.953"></status>
+</kw>
+<kw name="Take Screenshot" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 21:07:20.953" endtime="20220314 21:07:22.199"></status>
+</kw>
+<status status="PASS" starttime="20220314 21:06:54.386" endtime="20220314 21:07:22.200"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"This is resource test case"</arg>
+</arguments>
+<msg timestamp="20220314 21:07:22.201" level="INFO">"This is resource test case"</msg>
+<status status="PASS" starttime="20220314 21:07:22.201" endtime="20220314 21:07:22.202"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>RDS</arg>
+</arguments>
+<assign>
+<var>${res}</var>
+</assign>
+<msg timestamp="20220314 21:07:22.204" level="INFO">${res} = RDS</msg>
+<status status="PASS" starttime="20220314 21:07:22.202" endtime="20220314 21:07:22.204"></status>
+</kw>
+<kw name="Resources.Perform action on Resource" library="PageHelper">
+<arguments>
+<arg>${res}</arg>
+</arguments>
+<kw name="Get Page Handle" library="CommonHelper">
+<assign>
+<var>${page}</var>
+</assign>
+<kw name="Get Page Object" library="PlaywrightCore">
+<assign>
+<var>${page_handle}</var>
+</assign>
+<msg timestamp="20220314 21:07:22.211" level="INFO">${page_handle} = &lt;Page url='https://mindsnxt.cloudwiz.xyz/cost'&gt;</msg>
+<status status="PASS" starttime="20220314 21:07:22.210" endtime="20220314 21:07:22.212"></status>
+</kw>
+<msg timestamp="20220314 21:07:22.213" level="INFO">${page} = &lt;Page url='https://mindsnxt.cloudwiz.xyz/cost'&gt;</msg>
+<status status="PASS" starttime="20220314 21:07:22.208" endtime="20220314 21:07:22.213"></status>
+</kw>
+<kw name="Click Resource Menu" library="Resource">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:07:22.213" endtime="20220314 21:07:23.926"></status>
+</kw>
+<kw name="Click Resource" library="Resource">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:07:23.927" endtime="20220314 21:07:29.999"></status>
+</kw>
+<kw name="Click Resource Help" library="Resource">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:07:30.000" endtime="20220314 21:07:33.054"></status>
+</kw>
+<kw name="Click Resource Search" library="Resource">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:07:33.055" endtime="20220314 21:07:35.995"></status>
+</kw>
+<kw name="Enter Resource Search" library="Resource">
+<arguments>
+<arg>${page}</arg>
+<arg>${res}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:07:35.996" endtime="20220314 21:07:38.524"></status>
+</kw>
+<kw name="Click Resource Download" library="Resource">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:07:38.525" endtime="20220314 21:07:45.091"></status>
+</kw>
+<status status="PASS" starttime="20220314 21:07:22.205" endtime="20220314 21:07:45.092"></status>
+</kw>
+<kw name="Close Cloudwiz Application" library="CommonHelper" type="teardown">
+<kw name="Logout Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 21:07:45.097" endtime="20220314 21:07:52.821"></status>
+</kw>
+<kw name="Close Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 21:07:52.822" endtime="20220314 21:07:52.944"></status>
+</kw>
+<status status="PASS" starttime="20220314 21:07:45.094" endtime="20220314 21:07:52.944"></status>
+</kw>
+<status status="PASS" starttime="20220314 21:06:54.368" endtime="20220314 21:07:52.945" critical="yes"></status>
+</test>
+<doc>This is a Resource test file with Robot Framework</doc>
+<status status="PASS" starttime="20220314 21:06:38.160" endtime="20220314 21:07:59.338"></status>
+</suite>
+<suite id="s1-s10" name="j ResourceTest" source="C:\Users\Medhana Harihar\PycharmProjects\Playwright_RobotFramework\Test\j_ResourceTest.robot">
+<kw name="Launch Browser Engine" library="CommonHelper" type="setup">
+<kw name="Launch Browser" library="PlaywrightCore">
+<arguments>
+<arg>browser_name=chromium</arg>
+</arguments>
+<msg timestamp="20220314 21:08:24.465" level="INFO">Opening Browser : chromium</msg>
+<status status="PASS" starttime="20220314 21:08:14.458" endtime="20220314 21:08:24.466"></status>
+</kw>
+<status status="PASS" starttime="20220314 21:08:14.457" endtime="20220314 21:08:24.467"></status>
+</kw>
+<kw name="Quit Opened Browser" library="CommonHelper" type="teardown">
+<kw name="Close Browser" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 21:09:41.383" endtime="20220314 21:09:56.602"></status>
+</kw>
+<status status="PASS" starttime="20220314 21:09:41.382" endtime="20220314 21:09:56.602"></status>
+</kw>
+<test id="s1-s10-t1" name="Resources File Test Case">
+<kw name="Open Cloudwiz Application" library="CommonHelper" type="setup">
+<kw name="Open Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 21:08:24.521" endtime="20220314 21:08:34.405"></status>
+</kw>
+<kw name="Login Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 21:08:34.406" endtime="20220314 21:08:55.010"></status>
+</kw>
+<kw name="Take Screenshot" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 21:08:55.011" endtime="20220314 21:09:08.646"></status>
+</kw>
+<status status="PASS" starttime="20220314 21:08:24.519" endtime="20220314 21:09:08.647"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"This is resource test case"</arg>
+</arguments>
+<msg timestamp="20220314 21:09:08.649" level="INFO">"This is resource test case"</msg>
+<status status="PASS" starttime="20220314 21:09:08.648" endtime="20220314 21:09:08.649"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>RDS</arg>
+</arguments>
+<assign>
+<var>${res}</var>
+</assign>
+<msg timestamp="20220314 21:09:08.650" level="INFO">${res} = RDS</msg>
+<status status="PASS" starttime="20220314 21:09:08.649" endtime="20220314 21:09:08.650"></status>
+</kw>
+<kw name="Resources.Perform action on Resource" library="PageHelper">
+<arguments>
+<arg>${res}</arg>
+</arguments>
+<kw name="Get Page Handle" library="CommonHelper">
+<assign>
+<var>${page}</var>
+</assign>
+<kw name="Get Page Object" library="PlaywrightCore">
+<assign>
+<var>${page_handle}</var>
+</assign>
+<msg timestamp="20220314 21:09:08.656" level="INFO">${page_handle} = &lt;Page url='https://mindsnxt.cloudwiz.xyz/cost'&gt;</msg>
+<status status="PASS" starttime="20220314 21:09:08.656" endtime="20220314 21:09:08.657"></status>
+</kw>
+<msg timestamp="20220314 21:09:08.658" level="INFO">${page} = &lt;Page url='https://mindsnxt.cloudwiz.xyz/cost'&gt;</msg>
+<status status="PASS" starttime="20220314 21:09:08.654" endtime="20220314 21:09:08.658"></status>
+</kw>
+<kw name="Click Resource Menu" library="Resource">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:09:08.659" endtime="20220314 21:09:11.899"></status>
+</kw>
+<kw name="Click Resource" library="Resource">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:09:11.899" endtime="20220314 21:09:17.392"></status>
+</kw>
+<kw name="Click Resource Help" library="Resource">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:09:17.393" endtime="20220314 21:09:19.606"></status>
+</kw>
+<kw name="Click Resource Search" library="Resource">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:09:19.606" endtime="20220314 21:09:21.044"></status>
+</kw>
+<kw name="Enter Resource Search" library="Resource">
+<arguments>
+<arg>${page}</arg>
+<arg>${res}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:09:21.045" endtime="20220314 21:09:23.342"></status>
+</kw>
+<kw name="Click Resource Download" library="Resource">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<status status="PASS" starttime="20220314 21:09:23.343" endtime="20220314 21:09:33.813"></status>
+</kw>
+<status status="PASS" starttime="20220314 21:09:08.651" endtime="20220314 21:09:33.814"></status>
+</kw>
+<kw name="Close Cloudwiz Application" library="CommonHelper" type="teardown">
+<kw name="Logout Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 21:09:33.816" endtime="20220314 21:09:41.115"></status>
+</kw>
+<kw name="Close Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 21:09:41.115" endtime="20220314 21:09:41.378"></status>
+</kw>
+<status status="PASS" starttime="20220314 21:09:33.815" endtime="20220314 21:09:41.379"></status>
+</kw>
+<status status="PASS" starttime="20220314 21:08:24.467" endtime="20220314 21:09:41.379" critical="yes"></status>
+</test>
+<doc>This is a Resource test file with Robot Framework</doc>
+<status status="PASS" starttime="20220314 21:08:08.333" endtime="20220314 21:09:56.602"></status>
+</suite>
+<doc>[https://pabot.org/?ref=log|Pabot] result from 10 executions.</doc>
+<status status="FAIL" starttime="20220314 20:51:56.990" endtime="20220314 21:09:56.623"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="7" fail="3">Critical Tests</stat>
+<stat pass="7" fail="3">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="7" fail="3" id="s1" name="Suites">Suites</stat>
+<stat pass="0" fail="1" id="s1-s1" name="a BillingTest">Suites.a BillingTest</stat>
+<stat pass="1" fail="0" id="s1-s2" name="b UsageTest">Suites.b UsageTest</stat>
+<stat pass="1" fail="0" id="s1-s3" name="c UserTest">Suites.c UserTest</stat>
+<stat pass="0" fail="1" id="s1-s4" name="d TeamTest">Suites.d TeamTest</stat>
+<stat pass="1" fail="0" id="s1-s5" name="e AlertTest">Suites.e AlertTest</stat>
+<stat pass="1" fail="0" id="s1-s6" name="f IntegrationTest">Suites.f IntegrationTest</stat>
+<stat pass="1" fail="0" id="s1-s7" name="g SSOTest">Suites.g SSOTest</stat>
+<stat pass="0" fail="1" id="s1-s8" name="h APITest">Suites.h APITest</stat>
+<stat pass="1" fail="0" id="s1-s9" name="i CostTest">Suites.i CostTest</stat>
+<stat pass="1" fail="0" id="s1-s10" name="j ResourceTest">Suites.j ResourceTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

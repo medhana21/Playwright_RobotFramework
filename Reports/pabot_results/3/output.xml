@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.10.0 on win32)" generated="20220314 20:58:38.173" rpa="false">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="d TeamTest" source="C:\Users\Medhana Harihar\PycharmProjects\Playwright_RobotFramework\Test\d_TeamTest.robot">
+<kw name="Launch Browser Engine" library="CommonHelper" type="setup">
+<kw name="Launch Browser" library="PlaywrightCore">
+<arguments>
+<arg>browser_name=chromium</arg>
+</arguments>
+<msg timestamp="20220314 20:58:45.862" level="INFO">Opening Browser : chromium</msg>
+<status status="PASS" starttime="20220314 20:58:39.902" endtime="20220314 20:58:45.863"></status>
+</kw>
+<status status="PASS" starttime="20220314 20:58:39.901" endtime="20220314 20:58:45.864"></status>
+</kw>
+<test id="s1-s1-t1" name="Team File Test Case">
+<kw name="Open Cloudwiz Application" library="CommonHelper" type="setup">
+<kw name="Open Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 20:58:45.868" endtime="20220314 20:58:50.496"></status>
+</kw>
+<kw name="Login Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 20:58:50.497" endtime="20220314 20:59:10.608"></status>
+</kw>
+<kw name="Take Screenshot" library="PlaywrightCore">
+<msg timestamp="20220314 20:59:40.646" level="FAIL">TimeoutError: Timeout 30000ms exceeded.</msg>
+<status status="FAIL" starttime="20220314 20:59:10.608" endtime="20220314 20:59:40.647"></status>
+</kw>
+<status status="FAIL" starttime="20220314 20:58:45.866" endtime="20220314 20:59:40.648"></status>
+</kw>
+<kw name="Close Cloudwiz Application" library="CommonHelper" type="teardown">
+<kw name="Logout Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 20:59:40.651" endtime="20220314 20:59:48.481"></status>
+</kw>
+<kw name="Close Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 20:59:48.482" endtime="20220314 20:59:48.831"></status>
+</kw>
+<status status="PASS" starttime="20220314 20:59:40.648" endtime="20220314 20:59:48.832"></status>
+</kw>
+<status status="FAIL" starttime="20220314 20:58:45.865" endtime="20220314 20:59:48.832" critical="yes">Setup failed:
+TimeoutError: Timeout 30000ms exceeded.</status>
+</test>
+<kw name="Quit Opened Browser" library="CommonHelper" type="teardown">
+<kw name="Close Browser" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 20:59:48.837" endtime="20220314 20:59:57.109"></status>
+</kw>
+<status status="PASS" starttime="20220314 20:59:48.836" endtime="20220314 20:59:57.110"></status>
+</kw>
+<doc>This is a Team test file with Robot Framework</doc>
+<status status="FAIL" starttime="20220314 20:58:38.391" endtime="20220314 20:59:57.110"></status>
+</suite>
+<status status="FAIL" starttime="20220314 20:58:38.187" endtime="20220314 20:59:57.114"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Suites">Suites</stat>
+<stat pass="0" fail="1" id="s1-s1" name="d TeamTest">Suites.d TeamTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

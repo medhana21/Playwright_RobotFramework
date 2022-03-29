@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.10.0 on win32)" generated="20220314 20:51:56.984" rpa="false">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="a BillingTest" source="C:\Users\Medhana Harihar\PycharmProjects\Playwright_RobotFramework\Test\a_BillingTest.robot">
+<kw name="Launch Browser Engine" library="CommonHelper" type="setup">
+<kw name="Launch Browser" library="PlaywrightCore">
+<arguments>
+<arg>browser_name=chromium</arg>
+</arguments>
+<msg timestamp="20220314 20:52:52.561" level="INFO">Opening Browser : chromium</msg>
+<status status="PASS" starttime="20220314 20:52:00.796" endtime="20220314 20:52:52.562"></status>
+</kw>
+<status status="PASS" starttime="20220314 20:52:00.795" endtime="20220314 20:52:52.564"></status>
+</kw>
+<test id="s1-s1-t1" name=" Billing Account File Test Case">
+<kw name="Open Cloudwiz Application" library="CommonHelper" type="setup">
+<kw name="Open Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 20:52:52.569" endtime="20220314 20:53:12.759"></status>
+</kw>
+<kw name="Login Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 20:53:12.760" endtime="20220314 20:53:42.417"></status>
+</kw>
+<kw name="Take Screenshot" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 20:53:42.418" endtime="20220314 20:53:43.026"></status>
+</kw>
+<status status="PASS" starttime="20220314 20:52:52.567" endtime="20220314 20:53:43.026"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>"This is billing account test case"</arg>
+</arguments>
+<msg timestamp="20220314 20:53:43.028" level="INFO">"This is billing account test case"</msg>
+<status status="PASS" starttime="20220314 20:53:43.027" endtime="20220314 20:53:43.028"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>cloudwiz</arg>
+</arguments>
+<assign>
+<var>${search_billing_ac}</var>
+</assign>
+<msg timestamp="20220314 20:53:43.029" level="INFO">${search_billing_ac} = cloudwiz</msg>
+<status status="PASS" starttime="20220314 20:53:43.029" endtime="20220314 20:53:43.030"></status>
+</kw>
+<kw name="Billing Account.Perform action on Billing Account" library="PageHelper">
+<arguments>
+<arg>${search_billing_ac}</arg>
+</arguments>
+<kw name="Get Page Handle" library="CommonHelper">
+<assign>
+<var>${page}</var>
+</assign>
+<kw name="Get Page Object" library="PlaywrightCore">
+<assign>
+<var>${page_handle}</var>
+</assign>
+<msg timestamp="20220314 20:53:43.034" level="INFO">${page_handle} = &lt;Page url='https://mindsnxt.cloudwiz.xyz/cost'&gt;</msg>
+<status status="PASS" starttime="20220314 20:53:43.033" endtime="20220314 20:53:43.034"></status>
+</kw>
+<msg timestamp="20220314 20:53:43.035" level="INFO">${page} = &lt;Page url='https://mindsnxt.cloudwiz.xyz/cost'&gt;</msg>
+<status status="PASS" starttime="20220314 20:53:43.032" endtime="20220314 20:53:43.035"></status>
+</kw>
+<kw name="Click Billing Menu" library="BillingAccount">
+<arguments>
+<arg>${page}</arg>
+</arguments>
+<msg timestamp="20220314 20:54:14.477" level="FAIL">TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for selector "i"
+  selector resolved to visible &lt;i l10n-title="" title="Close" l10ntranslate="" ari…&gt;&lt;/i&gt;
+attempting click action
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #1
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #2
+  waiting 20ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #3
+  waiting 100ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #4
+  waiting 100ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #5
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #6
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #7
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #8
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #9
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #10
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #11
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #12
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #13
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #14
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #15
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #16
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #17
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #18
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #19
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #20
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #21
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #22
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #23
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #24
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #25
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #26
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #27
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #28
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #29
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #30
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #31
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #32
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #33
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #34
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #35
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #36
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #37
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #38
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #39
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #40
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #41
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #42
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #43
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #44
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #45
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #46
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #47
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #48
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #49
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #50
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #51
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #52
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #53
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #54
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #55
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #56
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #57
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #58
+  waiting 500ms
+============================================================</msg>
+<status status="FAIL" starttime="20220314 20:53:43.035" endtime="20220314 20:54:14.479"></status>
+</kw>
+<status status="FAIL" starttime="20220314 20:53:43.030" endtime="20220314 20:54:14.480"></status>
+</kw>
+<kw name="Close Cloudwiz Application" library="CommonHelper" type="teardown">
+<kw name="Logout Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 20:54:14.484" endtime="20220314 20:54:26.409"></status>
+</kw>
+<kw name="Close Application" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 20:54:26.410" endtime="20220314 20:54:26.731"></status>
+</kw>
+<status status="PASS" starttime="20220314 20:54:14.481" endtime="20220314 20:54:26.732"></status>
+</kw>
+<status status="FAIL" starttime="20220314 20:52:52.564" endtime="20220314 20:54:26.732" critical="yes">TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for selector "i"
+  selector resolved to visible &lt;i l10n-title="" title="Close" l10ntranslate="" ari…&gt;&lt;/i&gt;
+attempting click action
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #1
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #2
+  waiting 20ms
+  waiting for element to be visible, enabled and stable
+    [ Message content over the limit has been removed. ]
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #56
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #57
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #58
+  waiting 500ms
+============================================================</status>
+</test>
+<kw name="Quit Opened Browser" library="CommonHelper" type="teardown">
+<kw name="Close Browser" library="PlaywrightCore">
+<status status="PASS" starttime="20220314 20:54:26.736" endtime="20220314 20:54:34.676"></status>
+</kw>
+<status status="PASS" starttime="20220314 20:54:26.735" endtime="20220314 20:54:34.677"></status>
+</kw>
+<doc>This is a Billing test file with Robot Framework</doc>
+<status status="FAIL" starttime="20220314 20:51:57.141" endtime="20220314 20:54:34.678"></status>
+</suite>
+<status status="FAIL" starttime="20220314 20:51:56.990" endtime="20220314 20:54:34.696"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Suites">Suites</stat>
+<stat pass="0" fail="1" id="s1-s1" name="a BillingTest">Suites.a BillingTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

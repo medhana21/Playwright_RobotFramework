@@ -1,0 +1,16 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.c UserTest :: This is a User test file with Robot Framework            
+==============================================================================
+User File Test Case                                                   | PASS |
+------------------------------------------------------------------------------
+Suites.c UserTest :: This is a User test file with Robot Framework    | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+Suites                                                                | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+Output:  C:\Users\Medhana Harihar\PycharmProjects\Playwright_RobotFramework\Reports\pabot_results\2\output.xml

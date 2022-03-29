@@ -1,0 +1,16 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.j ResourceTest :: This is a Resource test file with Robot Framework    
+==============================================================================
+Resources File Test Case                                              | PASS |
+------------------------------------------------------------------------------
+Suites.j ResourceTest :: This is a Resource test file with Robot F... | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+Suites                                                                | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+Output:  C:\Users\Medhana Harihar\PycharmProjects\Playwright_RobotFramework\Reports\pabot_results\9\output.xml

@@ -1,0 +1,66 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.h APITest :: This is a API test file with Robot Framework              
+==============================================================================
+API File Test Case                                                    | FAIL |
+TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for selector "text=Admin"
+  selector resolved to visible <button l10ntranslate="" class="btn btn-link" _ngcontent…>…</button>
+attempting click action
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #1
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #2
+  waiting 20ms
+  waiting for element to be visible, enabled and stable
+    [ Message content over the limit has been removed. ]
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #51
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #52
+  waiting 500ms
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+  done scrolling
+  element is outside of the viewport
+retrying click action, attempt #53
+  waiting 500ms
+============================================================
+
+Also teardown failed:
+TimeoutError: Timeout 30000ms exceeded.
+=========================== logs ===========================
+waiting for selector "text=Logout"
+  selector resolved to hidden <button l10ntranslate="" ngbdropdownitem="" class="dropd…>…</button>
+attempting click action
+  waiting for element to be visible, enabled and stable
+    element is not visible - waiting...
+============================================================
+------------------------------------------------------------------------------
+Suites.h APITest :: This is a API test file with Robot Framework      | FAIL |
+1 critical test, 0 passed, 1 failed
+1 test total, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 critical test, 0 passed, 1 failed
+1 test total, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\Medhana Harihar\PycharmProjects\Playwright_RobotFramework\Reports\pabot_results\7\output.xml

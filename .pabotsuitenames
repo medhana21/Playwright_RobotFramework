@@ -1,0 +1,14 @@
+datasources:22c855793990f48c3c824972b67a58ea37b80636
+commandlineoptions:9f8598a690c7367accf83ead504756ddd374acc9
+suitesfrom:no-suites-from-option
+file:af5b2adedc062d13e4c4ddde8e7681879425ef53
+--suite Suites.a BillingTest
+--suite Suites.b UsageTest
+--suite Suites.c UserTest
+--suite Suites.d TeamTest
+--suite Suites.e AlertTest
+--suite Suites.f IntegrationTest
+--suite Suites.g SSOTest
+--suite Suites.h APITest
+--suite Suites.i CostTest
+--suite Suites.j ResourceTest

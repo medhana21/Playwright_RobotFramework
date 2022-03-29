@@ -1,0 +1,16 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.g SSOTest :: This is a SSO test file with Robot Framework              
+==============================================================================
+SSO File Test Case                                                    | PASS |
+------------------------------------------------------------------------------
+Suites.g SSOTest :: This is a SSO test file with Robot Framework      | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+Suites                                                                | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+Output:  C:\Users\Medhana Harihar\PycharmProjects\Playwright_RobotFramework\Reports\pabot_results\6\output.xml
